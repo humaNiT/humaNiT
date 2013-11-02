@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="RealTimeSignalRContext-Web.config Connection String" description="RealTimeSignalRContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=humaNiT2\InCoDev; Initial Catalog=RealTimeSignalRContext-20130904075316; Integrated Security=True; MultipleActiveResultSets=True;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Apps\\Projects\\TunaTum\\Exercises\\RealTimeSignalR\\RealTimeSignalR\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='RealTimeSignalRContext']/@connectionString" />
+  </parameter>
+</parameters>

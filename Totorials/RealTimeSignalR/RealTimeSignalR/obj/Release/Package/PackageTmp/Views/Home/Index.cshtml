@@ -1,0 +1,37 @@
+﻿<h3>Nama</h3>
+@*<img src="~/Content/images/icon.png" />*@
+<div class="loadingIndicator" data-bind="visible: loading()"></div>
+<table class="table" data-bind="visible: !loading()">
+    <thead>
+        <tr>
+            <th>Action</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: employees">
+        <tr data-bind="template: { name: $root.displayMode, data: $data}">
+        </tr>
+    </tbody>
+</table>
+
+<script type="text/html" id="read-template">
+    <td><a class="btn" data-bind="click: $root.edit">Edit</a></td>
+    <td data-bind="text: Name"></td>
+    <td data-bind="text: Email"></td>
+    <td data-bind="displayUang: Salary"></td>
+</script>
+
+<script type="text/html" id="lock-template">
+    <td class="btn btn-danger">Locked</></td>
+    <td data-bind="text: Name"></td>
+    <td data-bind="text: Email"></td>
+    <td data-bind="displayUang: Salary"></td>
+</script>
+<script type="text/html" id="edit-template">
+    <td><a class="btn btn-success" data-bind="click: $root.done">Done</a></td>
+    <td><input type="text" data-bind="value: Name" /></td>
+    <td><input type="text" data-bind="value: Email" /></td>
+    <td><input type="text" data-bind="value: Salary" ></td>
+</script>

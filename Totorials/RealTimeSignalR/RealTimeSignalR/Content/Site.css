@@ -1,0 +1,17 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: url(/content/images/icon.png) no-repeat bottom center;
+        -moz-background-size: 90px;
+        -o-background-size: 90px;
+        -webkit-background-size: 90px;
+        background-size: 90px;
+        ba
+}
+
+.loadingIndicator {
+    /*background-image: url(../img/loadingIndicator.gif);*/
+    background: url('/img/loadingIndicator.gif');
+    width: 60px;
+    height: 80px;
+}
